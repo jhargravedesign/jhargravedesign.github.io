@@ -1,0 +1,23 @@
+@media only screen and (max-width: 1299px) {
+
+#a-i-1 {
+    background-image: url(/img/lr/twisted-fronts_lr.jpg);   
+}
+
+#a-i-2 {
+    background-image: url(/img/lr/twisted-pages_lr.jpg);
+}    
+    
+}
+
+@media only screen and (min-width: 1300px) {
+
+#a-i-1 {
+    background-image: url(/img/hr/twisted-fronts_hr.jpg);   
+}
+
+#a-i-2 {
+    background-image: url(/img/hr/twisted-pages_hr.jpg);
+}  
+    
+}

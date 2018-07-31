@@ -1,0 +1,26 @@
+@media only screen and (max-width: 1299px) {
+
+#a-i-1 {
+    background-image: url(/img/lr/ore-fire-2_lr.jpg)
+}
+    
+#a-i-2 {
+    background-image: url(/img/lr/ore-matt_lr.jpg);
+}    
+    
+}
+
+@media only screen and (min-width: 1300px) {
+
+#a-i-1 {
+    background-image: url(/img/hr/ore-fire-2_hr.jpg)
+}
+    
+#a-i-2 {
+    background-image: url(/img/hr/ore-matt_hr.jpg);
+}    
+
+#a-i-1:hover {
+     background-image: url(/img/hr/ore-fire-3_hr.jpg);   
+}
+}
