@@ -321,11 +321,38 @@ footer {
 }
 
 @media (hover) {
-    .hover:hover {
-        color: var(--accent-color);
+     
+    .hover-footer {
+        position: relative;
     }
-    .hover:hover a {
-        color: var(--accent-color);
+    
+    .hover-footer:hover:after {
+        content: '';
+    position: absolute;
+    width: 70%;
+    display: block;
+    height: 0.6rem;
+    background-color: var(--accent-color);
+    bottom: 1em;
+    left: 50%;
+    transform: translate(-60%);
+    z-index: -1;
+    }
+    .hover-nav {
+        position: relative;
+    }
+    
+    .hover-nav:hover:after {
+        content: '';
+    position: absolute;
+    width: 70%;
+    display: block;
+    height: 0.6rem;
+    background-color: var(--accent-color);
+    bottom: 0.8em;
+    left: 50%;
+    transform: translate(-60%);
+    z-index: -1;
     }
     
     a {
