@@ -259,6 +259,7 @@ article h1 {
     background-color: var(--accent-color);
     background-size: contain;
     background-position: center;
+    cursor: pointer;
 }
 
 .product-text {
