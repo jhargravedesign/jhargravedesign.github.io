@@ -28,6 +28,10 @@ li {
     margin: 0;
 }
 
+p {
+    font-size: 1.2rem;
+}
+
 header {
     width: 100%;
     display: flex;
@@ -300,16 +304,16 @@ footer {
     font-weight: 600;
 }
 
-#contact a:after {
+#contact a:hover:after {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 95%;
     display: block;
     height: 0.5rem;
     background-color: var(--accent-color);
-    bottom: 0.4rem;
+    bottom: 1rem;
     left: 50%;
-    transform: translate(-45%);
+    transform: translate(-55%);
     z-index: -1;
 }
 
@@ -319,7 +323,95 @@ footer {
     padding: 0;
     
 }
+#email-me {
+    margin-bottom: 100px;
+}
+#email-me input {
+    width: 100%;
+    height: 2.5rem;
+    border: 2px solid var(--accent-color);
+    outline: none;
+    font-family: 'Crimson Text';
+    font-size: 1rem;
+    padding: 0;
+    padding-left: 0.5rem;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+#email-me textarea {
+    width: 100%;
+    border: 2px solid var(--accent-color);
+    outline: none;
+    font-family: 'Crimson Text';
+    font-size: 1rem;
+    resize: none;
+    padding: 0;
+    padding-left: 0.5rem;
+    box-sizing: border-box;
+}
+
+
+#email-me input[type=submit] {
+    width: 100%;
+    height: 2rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Fjalla One';
+    font-size: 1rem;
+    background-color: var(--accent-color);
+    
+}
+
+#email-me input[type=submit]:hover {
+    opacity: 0.5;
+}
+
+#email-me input:focus {
+    outline: none;
+}
+#comment {
+    height: auto;
+    overflow: scroll;
+}
+
+.lightbox-wrap {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    z-index: 9999999999999;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+}
+
+.lightbox {
+    width: 100vh;
+    position: absolute;
+    padding-bottom: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lightbox-active {
+    display: block;
+}
+.lb-close {
+    height: 54px;
+    width: 54px;
+    right: 0.5rem;
+    top: 0.5rem;
+    position: absolute;
+    background: url(/img/lb-close-icon.svg) center no-repeat;
+    background-size: contain;
+}
 @media (hover) {
      
     .hover-footer {
