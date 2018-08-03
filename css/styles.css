@@ -422,15 +422,15 @@ footer {
     
     .hover-footer:hover:after {
         content: '';
-    position: absolute;
-    width: 70%;
-    display: block;
-    height: 0.6rem;
-    background-color: var(--accent-color);
-    bottom: 1em;
-    left: 50%;
-    transform: translate(-60%);
-    z-index: -1;
+        position: absolute;
+        width: 70%;
+        display: block;
+        height: 0.6rem;
+        background-color: var(--accent-color);
+        bottom: 1em;
+        left: 50%;
+        transform: translate(-60%);
+        z-index: -1;
     }
     .hover-nav {
         position: relative;
@@ -438,15 +438,15 @@ footer {
     
     .hover-nav:hover:after {
         content: '';
-    position: absolute;
-    width: 70%;
-    display: block;
-    height: 0.6rem;
-    background-color: var(--accent-color);
-    bottom: 0.8em;
-    left: 50%;
-    transform: translate(-60%);
-    z-index: -1;
+        position: absolute;
+        width: 70%;
+        display: block;
+        height: 0.6rem;
+        background-color: var(--accent-color);
+        bottom: 0.8em;
+        left: 50%;
+        transform: translate(-60%);
+        z-index: -1;
     }
     
     a {
@@ -457,8 +457,23 @@ footer {
         cursor: pointer;
     }
     
-    .project-wrap:hover {
-        opacity: 0.9;
+    .project-wrap {
+        z-index: 11;
+        position: relative;
+    }
+    .project-img-hover {
+        content: '';
+        position: absolute;
+        width: 100%;
+        display: none;
+        padding-bottom: 100%;
+        background-color: var(--accent-color);
+        top: -0.5rem;
+        left: -0.5rem;
+        z-index: -1;
+ }
+    .project-wrap:hover .project-img-hover {
+        display: block;
     }
 }
 /* ---------------------------------------------------
