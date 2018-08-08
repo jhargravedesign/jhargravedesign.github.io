@@ -15,7 +15,8 @@ $(document).ready(function () {
        $('.lightbox-wrap').toggleClass('lightbox-active'); 
         
     });
-    
+
 
 });
+
 
