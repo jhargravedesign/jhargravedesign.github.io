@@ -1,3 +1,52 @@
+/* reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* root */
+
 :root {
     --c2: #87ffe3;
     --c1: #ff2546;
@@ -74,13 +123,17 @@ header {
 
 header a:first-child {
     grid-column: 2/4;
+    align-self: center;
+    grid-row: 1;
 }
 
 header h1 {
     margin-left: -0.3rem;
     font-family: 'Fjalla One';
+    font-size: 2rem;
     grid-column: 2/5;
     position: relative;
+    
 }
 
 header h1:after {
@@ -135,7 +188,7 @@ header ul li a:hover:after {
     
 }
 
-#m-nav {
+.m-nav {
     display: none;
 }
 
@@ -176,25 +229,26 @@ article {
 
 .p-txt {
     grid-row: 1;
-    margin-top: 35%;
+    margin-top: 40%;
     pointer-events: none;
     justify-self: start;
     display: inline-block;
     position: relative;
 }
 
-.p-txt h2 {
+.p-title {
+    grid-row: 1;
+    padding: 0;
+    margin-top: 20%;
+    height: auto;
+    align-self: start;
+    position: relative;
     font-family: "Fjalla One";
     font-size: 4rem;
-    margin: 0;
-    line-height: 4.5rem;
-    position: relative;
     z-index: 1;
-    width: auto;
-    display: inline-block;
 }
 
-.p-txt h2:after {
+.p-title:after {
     position: absolute;
     content: '';
     display: block;
@@ -210,16 +264,15 @@ article {
     font-size: 1.05rem;
 }
 
-.p-txt a {
-    pointer-events: auto;
-}
-
 .d-line {
     display: block;
     width: 30%;
     height: 0.5rem;
     background-color: var(--c3);
     margin-bottom: 1rem;
+}
+.d-line:first-of-type {
+    margin-top: 1rem;
 }
 
 .see-more {
@@ -283,11 +336,13 @@ article {
     margin-right: 55%;
 }
 
-.a-right .p-txt h2 {
+.a-right .p-title {
     margin-right: 0;
+    grid-column: 3/6;
+    justify-self: start;
 }
 
-.a-right .p-txt h2:after {
+.a-right .p-title:after {
     left: -1rem;
 }
 
@@ -325,11 +380,13 @@ article {
     margin-right: 0;
 }
 
-.a-left .p-txt h2 {
+.a-left .p-title {
     margin-left: 0;
+    grid-column: 5/8;
+    justify-self: end;
 }
 
-.a-left .p-txt h2:after {
+.a-left .p-title:after {
     right: -1rem;
 }
 
@@ -693,7 +750,7 @@ article {
 }
 
 @media only screen and (max-width:1110px) {
-    .p-txt h2 {
+    .p-title {
         font-size: 3rem;
     }
 }

@@ -1,3 +1,52 @@
+/* reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* root */
+
 :root {
     --c2: #87ffe3;
     --c1: #ff2546;
@@ -77,11 +126,14 @@ header {
 
 .h-title {
     grid-column: 2/7;
+    align-self: center;
+    grid-row: 1;
 }
 
 .h-title h1 {
     margin-left: -0.3rem;
     font-family: 'Fjalla One';
+    font-size: 2rem;
     position: relative;
     width: 100%;
 }
@@ -139,7 +191,7 @@ header {
     
 }
 
-#m-nav {
+.m-nav {
     display: block;
     background-color: white;
     grid-row: 1;
@@ -153,7 +205,7 @@ header {
     margin-right: 1rem;
 }
 
-#m-nav span {
+.m-nav span {
     width: 2.5rem;
     height: 0.25rem;
     left: 50%;
@@ -167,16 +219,16 @@ header {
     transition: all 0.2s ease-in; 
 }
 
-#m-nav span:nth-of-type(1) {
+.m-nav span:nth-of-type(1) {
     top: 35%;
     transform: translate(-50%, -50%);
 }
-#m-nav span:nth-of-type(2) {
+.m-nav span:nth-of-type(2) {
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-#m-nav span:nth-of-type(3) {
+.m-nav span:nth-of-type(3) {
     top: 65%;
     transform: translate(-50%, -50%);
 }
@@ -266,7 +318,7 @@ article {
     height: 100%;
 }
 
-.p-txt h2 {
+.p-title {
     font-family: "Fjalla One";
     font-size: 2rem;
     margin: 0;
@@ -275,13 +327,19 @@ article {
     z-index: 1;
     width: auto;
     display: inline-block;
+    grid-column: 2/6;
+    grid-row: 1;
+    height: auto;
+    align-self: start;
+    justify-self: start;
 }
 
-.p-txt h2:after {
+.p-title:after {
     position: absolute;
     content: '';
     display: block;
     top: -0.8rem;
+    left: -1rem;
     height: 160%;
     background-color: var(--c2);
     z-index: -1;
@@ -293,7 +351,8 @@ article {
     font-size: 1.05rem;
     align-self: end;
     position: absolute;
-    top: 100%;
+    top: 110%;
+    display: none;
 }
 
 .p-txt a {
@@ -337,14 +396,6 @@ article {
     width: 100%;
 }
 
-.a-right .p-txt h2 {
-    margin-right: 0;
-}
-
-.a-right .p-txt h2:after {
-    left: -1rem;
-}
-
 .a-right .p-txt .d-line:first-of-type {
     margin-left: 20%
 }
@@ -362,14 +413,6 @@ article {
     grid-column: 2/7;
     width: 100%;
     
-}
-
-.a-left .p-txt h2 {
-    margin-left: 0;
-}
-
-.a-left .p-txt h2:after {
-    right: -1rem;
 }
 
 .a-left .p-txt .d-line:first-of-type {
@@ -524,5 +567,5 @@ article {
 }
 
 .active-page {
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0, 0.4);
 }
