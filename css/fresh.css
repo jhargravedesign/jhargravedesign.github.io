@@ -1,0 +1,29 @@
+@media only screen and (max-width: 800px) {
+    
+    #p-i-1 {
+        background-image: url(/img/lr/fresh-stand_lr.jpg);
+    }
+    
+    #p-i-2 {
+        background-image: url(/img/lr/fresh-board_lr.jpg);
+    }
+    
+    #p-i-3 {
+        background-image: url(/img/lr/fresh-bags_lr.jpg);
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    
+    #p-i-1 {
+        background-image: url(/img/hr/fresh-stand_hr.jpg);
+    }
+    
+    #p-i-2 {
+        background-image: url(/img/hr/fresh-board_hr.jpg);
+    }
+    
+    #p-i-3 {
+        background-image: url(/img/hr/fresh-bags_hr.jpg);
+    }
+}

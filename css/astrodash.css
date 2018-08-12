@@ -1,0 +1,53 @@
+@media only screen and (max-width: 800px) {
+    
+    #p-i-1 {
+        background-image: url(/img/lr/astro-orig-board-logo_lr.jpg);
+    }
+    
+    #p-i-2 {
+        background-image: url(/img/lr/astro-orig-rules_lr.jpg);
+    }
+    
+    #p-i-3 {
+        background-image: url(/img/astrodash-thumb.svg);
+    }
+    
+    #p-i-4 {
+        background-image: url(/img/lr/astro-new-overview_lr.jpg)
+    }
+    
+    #p-i-5 {
+        background-image: url(/img/lr/astro-new-wipeout_lr.jpg)
+    }
+    
+    #p-i-6 {
+        background-image: url(/img/lr/astro-new-pieces_lr.jpg)
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    
+    #p-i-1 {
+        background-image: url(/img/hr/astro-orig-board-logo_hr.jpg);
+    }
+    
+    #p-i-2 {
+        background-image: url(/img/hr/astro-orig-rules_hr.jpg);
+    }
+    
+    #p-i-3 {
+        background-image: url(/img/astrodash-thumb.svg);
+    }
+    
+    #p-i-4 {
+        background-image: url(/img/hr/astro-new-overview_hr.jpg)
+    }
+    
+    #p-i-5 {
+        background-image: url(/img/hr/astro-new-wipeout_hr.jpg)
+    }
+    
+    #p-i-6 {
+        background-image: url(/img/hr/astro-new-pieces_hr.jpg)
+    }
+}
