@@ -6,8 +6,10 @@ $(document).ready(function(){
         $('.circle-1').toggle(0);
     });
     
-    $('#m-nav').click(function() {
+    $('.m-nav').click(function() {
+        $(this).toggleClass('m-nav-active');
         $('.m-nav-l').slideToggle(200);
+        
     });
     
     $(document).on('click', 'a[href^="#"]', function (event) {

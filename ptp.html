@@ -4,58 +4,73 @@
     <meta charset="utf-8">
     <title>Jamie Hargrave</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/ptp-style.css">
+    <link rel="stylesheet" media="(max-width: 860px)" href="css/pages-gridstyles-mobile.css">
+    <link rel="stylesheet" media="(min-width: 861px)" href="css/pages-gridstyles.css">
+    <link rel="stylesheet" href="css/ptp.css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Fjalla+One" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/gridmain.js"></script>
 </head>
 <body>
     <header>
-        <div class="title-wrap-pages">
-            <a href="/index.html"><h1>Jamie Hargrave <div class="color-block"></div></h1></a>
-            <nav id="d-nav"> <h2 style="display: none">Desktop Navigation</h2>
-                <ul>
-                    <li class="hover-nav"><a href="index.html">Work</a></li>
-                    <li class="hover-nav"><a href="contact.html">About + Contact</a></li>
-                </ul>
-            </nav>
-            <button type="button" id="m-menu"></button>
-        </div>
+        <a href="/index.html" class="h-title"><h1>Jamie Hargrave</h1></a>
+        <ul class="d-nav">
+            <li><a href="/index.html">Work</a></li>
+            <li><a href="/contact.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
         
-        <nav id="m-nav"><h2 style="display: none">Mobile Navigation</h2>
-            <ul>
-                <li ><a href="index.html" class="active-page">Work</a></li>
-                <li><a href="contact.html">About + Contact</a></li>
-            </ul>
-        </nav>
+        <button type="button" class="m-nav">
+            <span></span>
+            <span></span>
+            <span></span>            
+        </button>
+        
+        <ul class="m-nav-l">
+            <li><a href="/index.html">Work</a></li>
+            <li><a href="/contact.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
     </header>
-    <div class="spacer"></div>
-    <div class="lightbox-wrap"><div class="lb-close"></div><img class="lightbox"></div>
     <main>
-    <article>
-        <h1>Placing the Past</h1>
-        <div class="product-img" id="a-i-1"></div>
-        <div class="product-text" id="a-t-1">
-            <p>“The game of time and risk. Think you know the correct chronological order of the historical events, then play your hand - but get any wrong and score nothing. Other players placed theirs incorrectly? Call them out for bonus points with the challenge bell.”
-            <br><br>
-            The design features a winding timeline that wraps around the box, linking up with the title on the lid. Along the timeline sit icons representing various historical events found within the game’s contents. I wanted to create some interactivity with the box itself - can you work out what the icons represent? The wrapping of the timeline of the box also encourages the holder to turn it around in their hands. Before the box is in someone’s hands however, it needs to stand out on the shelf, the bold, neon colours set against black hope to achieve this.
-
-</p>
-        </div>
-        <div class="product-img" id="a-i-2"></div>
-        <div class="product-text" id="a-t-2">
-            <p>While playing the game, the cards are laid out, black side up, before they are flipped to reveal their chronology. The bold aqua colour creates a ‘reveal’ with the contrast against the black and yellow on the front of the card. 
-            </p>
-        </div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
         
-    </article>
+        <div class="spacer" id="s-1"></div>
+        
+        <article class="a-right" id="a-1">
+            <div class="p-title-wrap"><h2 class='p-title'>Placing the Past</h2></div>
+            <div class="p-img" id="p-i-1"></div>
+            <div class="p-txt" id="p-t-1">
+            <p>“The game of time and risk. Think you know the correct chronological order of the historical events, then play your hand - but get any wrong and score nothing. Other players placed theirs incorrectly? Call them out for bonus points with the challenge bell.” 
+            <br><br>
+            The design features a winding timeline that wraps around the box, linking up with the title on the lid. Along the timeline sit icons representing various historical events found within the game’s contents. I wanted to create some interactivity with the box itself - can you work out what the icons represent? The wrapping of the timeline of the box also encourages the holder to turn it around in their hands. Before the box is in someone’s hands however, it needs to stand out on the shelf, the bold, neon colours set against black hope to achieve this.</p>
+            </div>
+        </article>
+        
+        <div class="spacer" id="s-2"></div>
+        
+        <article class="a-left" id="a-2">
+            <div class="p-img" id="p-i-2"></div>
+            <div class="p-txt" id="p-t-2">
+            <p> While playing the game, the cards are laid out, black side up, before they are flipped to reveal their chronology. The bold aqua colour creates a ‘reveal’ with the contrast against the black and yellow on the front of the card.</p>
+            </div>
+        </article>
+        
+        <div class="spacer" id="s-3"></div>
+                
+        <footer>
+            <a href="/which-one.html" class="previous">&#x25C0; Previous </a>
+            <a href="/ore.html" class="next">Next  &#x25B6;</a>
+        </footer>
+                
     </main>
-    <footer>
-        <div class="footer-wrap">
-            <a href="which-one.html" class="hover-footer">&lt; Previous</a>
-            <a href="ore.html" class="hover-footer">Next &gt;</a>
-        </div>
-    </footer>
 </body>
 </html>
