@@ -1,0 +1,66 @@
+#s-1 {
+    background-image: url(/img/LR/astro-orig-board-logo_lr.jpg);
+}
+
+#s-2 {
+    background-image: url(/img/LR/astr-orig-wipeout_lr.jpg);
+}
+
+#s-3 {
+    background-image: url(/img/LR/astro-orig-rules_lr.jpg);
+}
+
+#s-4 {
+    background-image: url(/img/astrodash_thumb.svg);
+}
+
+#s-5 {
+    background-image: url(/img/LR/astro-new-overview_lr.jpg);
+}
+
+#s-6 {
+    background-image: url(/img/LR/astr-new-layers_lr.jpg);
+}
+
+#s-7 {
+    background-image: url(/img/LR/astro-new-wipeout_lr.jpg);
+}
+
+#s-8 {
+    background-image: url(/img/LR/astro-new-pieces_lr.jpg);
+    }  
+
+@media only screen and (min-width: 750px) {
+
+#s-1 {
+    background-image: url(/img/HR/astro-orig-board-logo_hr.jpg);
+}
+
+#s-2 {
+    background-image: url(/img/HR/astr-orig-wipeout_hr.jpg);
+}
+    
+#s-3 {
+    background-image: url(/img/HR/astro-orig-rules_hr.jpg);
+}
+
+#s-4 {
+    background-image: url(/img/astrodash_thumb.svg);
+}
+
+#s-5 {
+    background-image: url(/img/HR/astro-new-overview_hr.jpg);
+}
+
+#s-6 {
+    background-image: url(/img/HR/astr-new-layers_hr.jpg);
+}
+
+#s-7 {
+    background-image: url(/img/HR/astro-new-wipeout_hr.jpg);
+}
+    
+#s-9 {
+    background-image: url(/img/HR/astro-new-pieces_hr.jpg);
+    }    
+}

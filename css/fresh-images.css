@@ -1,0 +1,34 @@
+#s-1 {
+    background-image: url(/img/LR/fresh_thumb_lr.jpg);
+}
+
+#s-2 {
+    background-image: url(/img/LR/fresh_group_lr.jpg);
+}
+
+#s-3 {
+    background-image: url(/img/LR/fresh_bags_lr.jpg);
+}
+
+#s-4 {
+    background-image: url(/img/LR/fresh_action_lr.jpg);
+}
+
+@media only screen and (min-width: 750px) {
+    #s-1 {
+    background-image: url(/img/HR/fresh_thumb_hr.jpg);
+}
+
+#s-2 {
+    background-image: url(/img/HR/fresh_group_hr.jpg);
+}
+
+#s-3 {
+    background-image: url(/img/HR/fresh_bags_hr.jpg);
+}
+    
+#s-4 {
+    background-image: url(/img/HR/fresh_action_hr.jpg);
+}
+
+}

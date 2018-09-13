@@ -1,0 +1,34 @@
+#s-1 {
+    background-image: url(/img/LR/which-one_thumb_lr.jpg);
+}
+
+#s-2 {
+    background-image: url(/img/LR/which-one_group_lr.jpg);
+}
+
+#s-3 {
+    background-image: url(/img/LR/which-one_content_lr.jpg);
+}
+
+#s-4 {
+    background-image: url(/img/LR/which-one_box_lr.jpg);
+}
+
+@media only screen and (min-width: 750px) {
+    #s-1 {
+    background-image: url(/img/HR/which-one_thumb_hr.jpg);
+}
+
+#s-2 {
+    background-image: url(/img/HR/which-one_group_hr.jpg);
+}
+
+#s-3 {
+    background-image: url(/img/HR/which-one_content_hr.jpg);
+}
+
+#s-4 {
+    background-image: url(/img/HR/which-one_box_hr.jpg);
+}
+
+}

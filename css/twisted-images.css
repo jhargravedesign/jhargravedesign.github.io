@@ -1,0 +1,27 @@
+#s-1 {
+    background-image: url(/img/LR/twisted_thumb-2_lr.jpg);
+}
+
+#s-2 {
+    background-image: url(/img/LR/twisted_page-word_lr.jpg);
+}
+
+#s-3 {
+    background-image: url(/img/LR/twisted_page-sudoku_lr.jpg);
+}
+
+
+@media only screen and (min-width: 750px) {
+    #s-1 {
+    background-image: url(/img/HR/twisted_thumb-2_hr.jpg);
+}
+
+#s-2 {
+    background-image: url(/img/HR/twisted_page-word_hr.jpg);
+}
+
+#s-3 {
+    background-image: url(/img/HR/twisted_page-sudoku_hr.jpg);
+}
+    
+}

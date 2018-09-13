@@ -1,0 +1,27 @@
+#s-1 {
+    background-image: url(/img/LR/where_thumb_lr.jpg);
+}
+
+#s-2 {
+    background-image: url(/img/LR/where_content_lr.jpg);
+}
+
+#s-3 {
+    background-image: url(/img/LR/where_box_lr.jpg);
+}
+
+
+@media only screen and (min-width: 750px) {
+    #s-1 {
+    background-image: url(/img/HR/where_thumb_hr.jpg);
+}
+
+#s-2 {
+    background-image: url(/img/HR/where_content_hr.jpg);
+}
+
+#s-3 {
+    background-image: url(/img/HR/where_box_hr.jpg);
+}
+    
+}

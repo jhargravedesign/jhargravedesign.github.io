@@ -1,0 +1,34 @@
+#s-1 {
+    background-image: url(/img/LR/tales_thumb_lr.jpg);
+}
+
+#s-2 {
+    background-image: url(/img/LR/tales_cass_lr.jpg);
+}
+
+#s-3 {
+    background-image: url(/img/LR/tales_ceph_lr.jpg);
+}
+
+#s-4 {
+    background-image: url(/img/LR/tales_group_lr.jpg);
+}
+
+@media only screen and (min-width: 750px) {
+    #s-1 {
+    background-image: url(/img/HR/tales_thumb_hr.jpg);
+}
+
+#s-2 {
+    background-image: url(/img/HR/tales_cass_hr.jpg);
+}
+
+#s-3 {
+    background-image: url(/img/HR/tales_ceph_hr.jpg);
+}
+    
+#s-4 {
+    background-image: url(/img/HR/tales_group_hr.jpg);
+}
+
+}
