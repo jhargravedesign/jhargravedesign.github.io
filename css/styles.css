@@ -50,8 +50,8 @@ table {
 
 body {
     background-color: #222;
-    background-image: url(/img/bg-pattern.svg);
-    background-size: 2rem;
+    /*background-image: url(/img/bg-pattern.svg);
+    background-size: 2rem;*/
 }
 
 a { 
