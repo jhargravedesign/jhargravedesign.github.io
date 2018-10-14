@@ -60,7 +60,7 @@ a {
 }
 
 header {
-    position: fixed;
+    position: absolute;
     min-height: 3rem;
     background-color: #222;
     width: 100%;
